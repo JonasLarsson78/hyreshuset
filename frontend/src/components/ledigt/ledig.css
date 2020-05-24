@@ -1,0 +1,51 @@
+.ledigTh {
+  text-align: left;
+  border: 1px solid black;
+}
+.ledigImg {
+  width: 100%;
+  height: 450px;
+  background-image: url(/img/ledig.jpg);
+  background-size: 100%;
+  background-position-y: -100px;
+  background-repeat: no-repeat;
+}
+.ledigTable {
+  width: 60%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+.ledigInfoBtn {
+  border: none;
+  background-color: var(--defaultColor);
+  color: white;
+  width: 110px;
+  height: 28px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+.ledigInfoBtn:hover {
+  background-color: var(--defaultColorActive);
+}
+.ledigTableMobil {
+  display: none;
+}
+@media only screen and (max-device-width: 901px) {
+  .ledigImg {
+    width: 375px;
+    height: 140px;
+    background-position-y: 0px;
+  }
+  .ledigTable {
+    display: none;
+  }
+  .ledigTableMobil {
+    display: block;
+  }
+}

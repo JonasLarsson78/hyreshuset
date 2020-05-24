@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+:root {
+  --backColor: #ffffff;
+  --textColor: #ffffff;
+  --defaultColor: #ff6347;
+  --defaultColorActive: #fa765f;
+}
+* {
+  font-family: 'Roboto', sans-serif;
+}
+td {
+  height: 25px;
+  padding: 5px;
+}
+.marginTop {
+  margin-top: 150px;
+}
+.textAlignLeft {
+  text-align: left;
+}
+
+/* Header CSS */
+.headerContainer {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100px;
+  width: calc(100% - 20px);
+  padding-left: 20px;
+  background-color: var(--backColor);
+}
+.headerHr {
+  border-color: var(--defaultColor);
+}
+.headerLogo {
+  width: 160px;
+  height: 160px;
+  background-image: url(/img/logo.png);
+  background-size: 100%;
+  background-position-y: -30px;
+}
+.headerUserSettings {
+  position: absolute;
+  right: 150px;
+  top: 50px;
+  border: none;
+  background-color: var(--defaultColor);
+  color: var(--textColor);
+  width: 110px;
+  height: 28px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+.headerUserSettings:hover {
+  background-color: var(--defaultColorActive);
+}
+.headerLogout {
+  position: absolute;
+  right: 20px;
+  top: 50px;
+  color: var(--defaultColor);
+  background-color: var(--backColor);
+  border: 1px solid var(--defaultColor);
+}
+.headerLogout:hover {
+  color: var(--defaultColorActive);
+  background-color: var(--backColor);
+}
+/* Meny CSS */
+.menyContainer {
+  position: fixed;
+  top: 100px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 50px;
+  background-color: var(--defaultColor);
+}
+.menyBtn {
+  padding: 5px;
+  padding-top: 15px;
+  color: var(--textColor);
+  background-color: var(--defaultColor);
+  cursor: pointer;
+  z-index: 1;
+  text-decoration: none;
+  /* border: 1px solid black; */
+}
+.menyBtnActive,
+.menyBtn:hover {
+  background-color: var(--defaultColorActive);
+}
+.menyLoginUser {
+  position: absolute;
+  left: 10px;
+  top: 14px;
+  color: var(--textColor);
+  font-size: 18px;
+}
+
+/* Main CSS */
+.mainContainer {
+  width: 100%;
+  background-color: var(--backColor);
+}
+.mainImg {
+  width: 100%;
+  height: 450px;
+  background-image: url(../img/mainImg.jpg);
+  background-size: 100%;
+  background-position-y: 75%;
+}
+.mainKort {
+  position: relative;
+  left: -22px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.mainNameTitle {
+  text-align: center;
+}
+/* Footer CSS */
+.footerContainer {
+  position: fixed;
+  bottom: 0px;
+  margin-top: 20px;
+  height: 80px;
+  width: 100%;
+  background-color: var(--backColor);
+}
+.footerHr {
+  border-color: var(--defaultColor);
+}
+.copyText {
+  position: relative;
+  top: 20px;
+  text-align: center;
+  font-size: 12px;
+}
+/* Mobile CSS Iphone X */
+@media only screen and (max-device-width: 901px) {
+  h2 {
+    font-size: medium;
+  }
+  .headerLogo {
+    width: 100px;
+    height: 100px;
+    background-image: url(/img/logo.png);
+    background-size: 100%;
+    background-position-y: -0px;
+  }
+  .menyContainer {
+    position: fixed;
+    top: 100px;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 50px;
+    background-color: var(--defaultColor);
+  }
+  .menyLoginUser {
+    display: none;
+  }
+  .mainImg {
+    width: 375px;
+    height: 150px;
+  }
+  .mainKort {
+    display: block;
+    margin-bottom: 100px;
+  }
+  .kortContainer {
+    margin-bottom: 30px;
+    position: relative;
+    left: 0px;
+  }
+  .menyBtn {
+    padding-top: 19px;
+    font-size: 12px;
+  }
+  .headerUserSettings {
+    top: 65px;
+    left: 195px;
+    width: 80px;
+    height: 25px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .headerLogout {
+    left: 285px;
+  }
+}

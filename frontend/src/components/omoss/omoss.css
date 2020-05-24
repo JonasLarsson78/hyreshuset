@@ -1,0 +1,13 @@
+.omossImg {
+  width: 100%;
+  height: 450px;
+  background-image: url(/img/omoss.jpg);
+  background-size: 100%;
+  background-position-y: -250px;
+}
+@media only screen and (max-device-width: 901px) {
+  .omossImg {
+    width: 375px;
+    height: 150px;
+  }
+}
