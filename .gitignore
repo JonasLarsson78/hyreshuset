@@ -1,6 +1,9 @@
 backend/node_modules/
+backend/functions/serverUtils/
 frontend/node_modules/
 frontend/build/
+frontend/src/components/firebaseConfig.js
+*.rar
 
 # misc
 .DS_Store
